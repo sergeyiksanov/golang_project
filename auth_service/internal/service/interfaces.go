@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/sergeyiksanov/AuthService/internal/dto"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/dto"
 	"gorm.io/gorm"
 )
 

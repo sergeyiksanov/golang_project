@@ -1,6 +1,6 @@
 package dto
 
-import "github.com/sergeyiksanov/AuthService/internal/entity"
+import "github.com/sergeyiksanov/golang_project/auth_service/internal/entity"
 
 type CredentialsDto struct {
 	ID       int64  `gorm:"column_id:id,primaryKey"`

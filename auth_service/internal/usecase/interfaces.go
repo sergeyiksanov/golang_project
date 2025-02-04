@@ -3,8 +3,8 @@ package usecase
 import (
 	"context"
 
-	"github.com/sergeyiksanov/AuthService/internal/dto"
-	"github.com/sergeyiksanov/AuthService/internal/entity"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/dto"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/entity"
 )
 
 type credentialsService interface {

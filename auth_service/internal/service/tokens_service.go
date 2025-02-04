@@ -9,8 +9,8 @@ import (
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/google/uuid"
-	"github.com/sergeyiksanov/AuthService/internal/dto"
-	"github.com/sergeyiksanov/AuthService/internal/utils"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/dto"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/utils"
 	"gorm.io/gorm"
 )
 

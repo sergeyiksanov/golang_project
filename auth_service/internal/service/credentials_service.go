@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 
-	"github.com/sergeyiksanov/AuthService/internal/convertor"
-	"github.com/sergeyiksanov/AuthService/internal/dto"
-	"github.com/sergeyiksanov/AuthService/internal/entity"
-	"github.com/sergeyiksanov/AuthService/internal/external"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/convertor"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/dto"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/entity"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/external"
 
 	"math/rand"
 

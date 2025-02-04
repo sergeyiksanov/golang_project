@@ -3,9 +3,9 @@ package api
 import (
 	"context"
 
-	desc "github.com/sergeyiksanov/AuthService/pkg/api/v1"
+	desc "github.com/sergeyiksanov/golang_project/auth_service/pkg/api/v1"
 
-	"github.com/sergeyiksanov/AuthService/internal/usecase"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/usecase"
 	"google.golang.org/protobuf/types/known/emptypb"
 )
 

@@ -1,9 +1,9 @@
 package external
 
 import (
-	"github.com/sergeyiksanov/AuthService/internal/config"
-	"github.com/sergeyiksanov/AuthService/internal/convertor"
-	"github.com/sergeyiksanov/AuthService/internal/entity"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/config"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/convertor"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/entity"
 
 	"github.com/rabbitmq/amqp091-go"
 	"google.golang.org/protobuf/proto"

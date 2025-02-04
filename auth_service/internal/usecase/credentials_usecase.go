@@ -3,9 +3,9 @@ package usecase
 import (
 	"context"
 
-	"github.com/sergeyiksanov/AuthService/internal/entity"
-	"github.com/sergeyiksanov/AuthService/internal/utils"
-	proto "github.com/sergeyiksanov/AuthService/pkg/api/v1"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/entity"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/utils"
+	proto "github.com/sergeyiksanov/golang_project/auth_service/pkg/api/v1"
 
 	"google.golang.org/protobuf/types/known/emptypb"
 )

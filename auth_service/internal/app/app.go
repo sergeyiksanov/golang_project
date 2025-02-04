@@ -5,8 +5,8 @@ import (
 	"net"
 	"os"
 
-	"github.com/sergeyiksanov/AuthService/internal/config"
-	proto "github.com/sergeyiksanov/AuthService/pkg/api/v1"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/config"
+	proto "github.com/sergeyiksanov/golang_project/auth_service/pkg/api/v1"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

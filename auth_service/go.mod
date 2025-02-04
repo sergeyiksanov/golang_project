@@ -1,4 +1,4 @@
-module github.com/sergeyiksanov/AuthService
+module github.com/sergeyiksanov/golang_project/auth_service
 
 go 1.23.1
 

@@ -3,12 +3,12 @@ package app
 import (
 	"log"
 
-	"github.com/sergeyiksanov/AuthService/internal/api"
-	"github.com/sergeyiksanov/AuthService/internal/config"
-	"github.com/sergeyiksanov/AuthService/internal/external"
-	"github.com/sergeyiksanov/AuthService/internal/repository"
-	"github.com/sergeyiksanov/AuthService/internal/service"
-	"github.com/sergeyiksanov/AuthService/internal/usecase"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/api"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/config"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/external"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/repository"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/service"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/usecase"
 
 	"go.uber.org/zap"
 	"gorm.io/gorm"

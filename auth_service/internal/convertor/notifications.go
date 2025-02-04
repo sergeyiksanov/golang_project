@@ -1,7 +1,7 @@
 package convertor
 
 import (
-	"github.com/sergeyiksanov/AuthService/internal/entity"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/entity"
 
 	notifiocationProto "github.com/sergeyiksanov/notification-service/pkg/api/v1"
 )

@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/sergeyiksanov/AuthService/internal/app"
+	"github.com/sergeyiksanov/golang_project/auth_service/internal/app"
 )
 
 func main() {
