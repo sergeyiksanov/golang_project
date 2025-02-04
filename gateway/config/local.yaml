@@ -1,0 +1,7 @@
+logger:
+  level: "debug"
+  format: "json"
+  output_paths:
+    - stdout
+    - ./logs/app.log
+  enable_stacktrace: true
