@@ -1,0 +1,18 @@
+{"level":"info","ts":"2025-02-03T21:36:01.547+0300","caller":"app/app.go:26","msg":"Application started","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T22:32:47.068+0300","caller":"routes/auth.go:21","msg":"Setup auth routes","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T22:32:47.068+0300","caller":"app/app.go:26","msg":"Application started","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T22:38:19.958+0300","caller":"routes/auth.go:21","msg":"Setup auth routes","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T22:38:19.959+0300","caller":"app/app.go:26","msg":"Application started","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T22:38:31.632+0300","caller":"routes/auth.go:21","msg":"Setup auth routes","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T22:38:31.633+0300","caller":"app/app.go:26","msg":"Application started","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T22:43:06.896+0300","caller":"routes/auth.go:21","msg":"Setup auth routes","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T22:43:06.897+0300","caller":"app/app.go:26","msg":"Application started","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T22:53:21.156+0300","caller":"routes/auth.go:21","msg":"Setup auth routes","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T22:53:21.157+0300","caller":"app/app.go:26","msg":"Application started","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T22:53:25.448+0300","caller":"middleware/logger_middleware.go:28","msg":"HTTP Request","method":"POST","path":"/auth/login","query":"","ip":"::1","user_agent":"PostmanRuntime/7.43.0","status":200,"duration":0.000200875}
+{"level":"info","ts":"2025-02-03T23:09:29.656+0300","caller":"routes/auth.go:25","msg":"Setup auth routes","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T23:09:29.656+0300","caller":"app/app.go:26","msg":"Application started","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-03T23:09:33.980+0300","caller":"middleware/logger_middleware.go:28","msg":"HTTP Request","method":"POST","path":"/auth/login","query":"","ip":"::1","user_agent":"PostmanRuntime/7.43.0","status":404,"duration":0.000000292}
+{"level":"info","ts":"2025-02-04T14:41:47.653+0300","caller":"routes/auth.go:25","msg":"Setup auth routes","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-04T14:41:47.654+0300","caller":"app/app.go:26","msg":"Application started","version":"1.0.0","port":8080}
+{"level":"info","ts":"2025-02-04T14:43:36.368+0300","caller":"middleware/logger_middleware.go:28","msg":"HTTP Request","method":"POST","path":"/auth/sign_up","query":"","ip":"::1","user_agent":"PostmanRuntime/7.43.0","status":400,"duration":0.000119875}
