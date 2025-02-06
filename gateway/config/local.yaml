@@ -5,3 +5,7 @@ logger:
     - stdout
     - ./logs/app.log
   enable_stacktrace: true
+
+grpc:
+  server_address: "localhost:1234"
+  connection_timeout: 10

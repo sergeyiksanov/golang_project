@@ -1,19 +1,18 @@
 package routes
 
 import (
-	"github.com/sergeyiksanov/golang_project/internal/controllers"
-
 	"github.com/gin-gonic/gin"
+	"github.com/sergeyiksanov/golang_project/gateway/internal/api/controllers/auth_controller"
 	"go.uber.org/zap"
 )
 
 type AuthRoutes struct {
 	logger     *zap.Logger
 	handler    *gin.Engine
-	controller controllers.IAuthController
+	controller *auth_controller.AuthController
 }
 
-func NewAuthRoutes(logger *zap.Logger, handler *gin.Engine, controller controllers.IAuthController) *AuthRoutes {
+func NewAuthRoutes(logger *zap.Logger, handler *gin.Engine, controller *auth_controller.AuthController) *AuthRoutes {
 	return &AuthRoutes{
 		logger:     logger,
 		handler:    handler,

@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"github.com/sergeyiksanov/golang_project/internal/app"
+	"github.com/sergeyiksanov/golang_project/gateway/internal/app"
 )
 
 func main() {
@@ -12,7 +12,7 @@ func main() {
 		panic(err)
 	}
 
-	if err := app.Run(); err != nil {
+	if err := app.Run(context.Background()); err != nil {
 		panic(err)
 	}
 }

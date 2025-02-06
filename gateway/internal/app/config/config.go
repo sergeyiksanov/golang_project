@@ -11,6 +11,7 @@ var validate = validator.New()
 
 type Config struct {
 	Logger LoggerConfig `mapstructure:"logger"`
+	Grpc   GrpcConfig   `mapstructure:"grpc"`
 }
 
 func Load() (*Config, error) {
@@ -20,6 +21,7 @@ func Load() (*Config, error) {
 	v.SetDefault("logger.format", "json")
 	v.SetDefault("logger.output_paths", []string{"stdout"})
 	v.SetDefault("logger.enable_stacktrace", false)
+	v.SetDefault("grpc.connection_timeout", 10)
 
 	v.SetConfigName("local")
 	v.AddConfigPath("./config")

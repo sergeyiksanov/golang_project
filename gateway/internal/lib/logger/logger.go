@@ -4,8 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/sergeyiksanov/golang_project/internal/config"
-
+	"github.com/sergeyiksanov/golang_project/gateway/internal/app/config"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"

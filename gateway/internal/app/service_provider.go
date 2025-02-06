@@ -1,13 +1,13 @@
 package app
 
 import (
-	"github.com/sergeyiksanov/golang_project/internal/api/middleware"
-	"github.com/sergeyiksanov/golang_project/internal/api/routes"
-	"github.com/sergeyiksanov/golang_project/internal/app/logger"
-	"github.com/sergeyiksanov/golang_project/internal/clients"
-	"github.com/sergeyiksanov/golang_project/internal/config"
-	"github.com/sergeyiksanov/golang_project/internal/controllers"
-	"github.com/sergeyiksanov/golang_project/internal/usecases"
+	"github.com/sergeyiksanov/golang_project/gateway/internal/adapters/auth_adapter"
+	"github.com/sergeyiksanov/golang_project/gateway/internal/api/controllers/auth_controller"
+	"github.com/sergeyiksanov/golang_project/gateway/internal/api/middleware"
+	"github.com/sergeyiksanov/golang_project/gateway/internal/api/routes"
+	"github.com/sergeyiksanov/golang_project/gateway/internal/app/config"
+	"github.com/sergeyiksanov/golang_project/gateway/internal/lib/logger"
+	"github.com/sergeyiksanov/golang_project/gateway/internal/usecases/auth_usecase"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
@@ -31,13 +31,13 @@ type serviceProvider struct {
 	loggerMiddleware *middleware.LoggerMiddleware
 
 	//controllers
-	authController controllers.IAuthController
+	authController *auth_controller.AuthController
 
 	//usecases
-	authUseCase usecases.IAuthUseCase
+	authUseCase *auth_usecase.AuthUseCase
 
-	//clients
-	authClient clients.IAuthClient
+	//adapters
+	authAdapter *auth_adapter.AuthAdapter
 }
 
 func newServiceProvider() *serviceProvider {
@@ -106,26 +106,26 @@ func (s *serviceProvider) LoggerMiddleware() *middleware.LoggerMiddleware {
 	return s.loggerMiddleware
 }
 
-func (s *serviceProvider) AuthController() controllers.IAuthController {
+func (s *serviceProvider) AuthController() *auth_controller.AuthController {
 	if s.authController == nil {
-		s.authController = controllers.NewAuthController(s.Logger(), s.AuthUseCase())
+		s.authController = auth_controller.NewAuthController(s.Logger(), s.AuthUseCase())
 	}
 
 	return s.authController
 }
 
-func (s *serviceProvider) AuthUseCase() usecases.IAuthUseCase {
+func (s *serviceProvider) AuthUseCase() *auth_usecase.AuthUseCase {
 	if s.authUseCase == nil {
-		s.authUseCase = usecases.NewAuthUseCase(s.Logger(), s.AuthClient())
+		s.authUseCase = auth_usecase.NewAuthUseCase(s.Logger(), s.AuthAdapter())
 	}
 
 	return s.authUseCase
 }
 
-func (s *serviceProvider) AuthClient() clients.IAuthClient {
-	if s.authClient == nil {
-		s.authClient = clients.NewAuthClient(s.Logger())
+func (s *serviceProvider) AuthAdapter() *auth_adapter.AuthAdapter {
+	if s.authAdapter == nil {
+		s.authAdapter = auth_adapter.NewAuthAdapter(s.Logger(), &s.Config().Grpc)
 	}
 
-	return s.authClient
+	return s.authAdapter
 }
